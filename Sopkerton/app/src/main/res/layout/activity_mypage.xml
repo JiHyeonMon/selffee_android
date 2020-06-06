@@ -62,6 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
+            android:paddingRight="5dp"
             android:text="yemini90"
             android:textColor="@color/gray"
             android:textSize="17sp"
@@ -106,17 +107,17 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="내가 쓴 글(20)" />
+            android:text="@string/write" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="좋아요(14)" />
+            android:text="@string/like" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="찜한 레시피(16)" />
+            android:text="@string/zzim" />
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
