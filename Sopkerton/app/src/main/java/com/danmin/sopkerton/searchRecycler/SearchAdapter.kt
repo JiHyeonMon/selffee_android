@@ -1,9 +1,15 @@
 package com.danmin.sopkerton.searchRecycler
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.danmin.sopkerton.DetailActivity
+import com.danmin.sopkerton.MypageActivity
 import com.danmin.sopkerton.R
 
 class SearchAdapter (private val context: Context): RecyclerView.Adapter<SearchViewHolder>(){
@@ -21,5 +27,8 @@ class SearchAdapter (private val context: Context): RecyclerView.Adapter<SearchV
 
     override fun onBindViewHolder(holder: SearchViewHolder, position: Int) {
         holder.bind(datas[position])
+
     }
+
+
 }

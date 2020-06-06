@@ -13,5 +13,11 @@ class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     fun bind(myData: MyData) {
         Glide.with(itemView).load(myData.img_my).into(img_my)
+
+
+
+
+
+
     }
 }
