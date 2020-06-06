@@ -1,10 +1,11 @@
-package com.danmin.sopkerton
+package com.danmin.sopkerton.recipeRecycler
 
 import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.danmin.sopkerton.R
 
 class RecipeAdapter(private val context : Context) : RecyclerView.Adapter<RecipeViewHolder>(){
     var datas= mutableListOf<Related_Recipe_Data>()
