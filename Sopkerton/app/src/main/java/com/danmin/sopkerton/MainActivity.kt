@@ -3,9 +3,7 @@ package com.danmin.sopkerton
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.WindowManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.danmin.sopkerton.mainRecycler.MainAdapter
 import com.danmin.sopkerton.mainRecycler.MainData
 import kotlinx.android.synthetic.main.activity_main.*
@@ -37,12 +35,12 @@ class MainActivity : AppCompatActivity() {
         mainAdapter.datas = datas
         mainAdapter.notifyDataSetChanged()
 
-        person.setOnClickListener {
+        btn_mypage.setOnClickListener {
             val intent = Intent(this, MypageActivity::class.java)
             startActivity(intent)
         }
 
-        search.setOnClickListener {
+        btn_search.setOnClickListener {
             val intent = Intent(this, SearchActivity::class.java)
             startActivity(intent)
         }
