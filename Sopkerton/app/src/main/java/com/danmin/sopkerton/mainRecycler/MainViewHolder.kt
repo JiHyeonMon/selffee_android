@@ -6,6 +6,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.danmin.sopkerton.R
+import com.danmin.sopkerton.data.ResponseMainData
 
 
 class MainViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){

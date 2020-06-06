@@ -49,7 +49,6 @@ class SearchActivity : AppCompatActivity() {
             adapter = searchAdapter
             layoutManager = GridLayoutManager(this@SearchActivity, 2)
 
-
         }
 
         datas.apply {
