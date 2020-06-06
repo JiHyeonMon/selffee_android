@@ -3,7 +3,6 @@ package com.danmin.sopkerton
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import com.danmin.sopkerton.recipeRecycler.RecipeAdapter
 import com.danmin.sopkerton.recipeRecycler.Related_Recipe_Data
 import kotlinx.android.synthetic.main.activity_detail.*
@@ -16,16 +15,19 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
+        btn_left.setOnClickListener {
+            val intent = Intent(this, SearchActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         RecipeAdapter = RecipeAdapter(this)
         rv_Related_recipe.adapter = RecipeAdapter
         loadDatas()
 
-        btn_back.setOnClickListener{
-            finish()
-        }
-
     }
+
+
 
 
     fun loadDatas(){
@@ -57,7 +59,6 @@ class DetailActivity : AppCompatActivity() {
             )
             RecipeAdapter.datas = datas
             RecipeAdapter.notifyDataSetChanged()        }
-
     }
 
 }

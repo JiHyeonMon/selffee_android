@@ -22,9 +22,6 @@ class MainAdapter (private val context: Context):RecyclerView.Adapter<MainViewHo
 
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
         holder.bind(datas[position])
-        holder.itemView.setOnClickListener{
-            itemClickListener.onClick(it,position)
-        }
     }
     interface ItemClickListener{
         fun onClick(view: View, position:Int)
