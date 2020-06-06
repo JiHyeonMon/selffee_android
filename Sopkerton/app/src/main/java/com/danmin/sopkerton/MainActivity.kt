@@ -3,6 +3,7 @@ package com.danmin.sopkerton
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.danmin.sopkerton.mainRecycler.MainAdapter
 import com.danmin.sopkerton.mainRecycler.MainData
@@ -53,5 +54,14 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SearchActivity::class.java)
             startActivity(intent)
         }
+        mainAdapter.setItemClickListener(object : MainAdapter.ItemClickListener{
+            override fun onClick(view: View, position:Int){
+                if(position==0){
+                    val Intent =  Intent(this@MainActivity,DetailActivity::class.java)
+                    startActivity(Intent)
+                }
+
+            }
+        })
     }
 }

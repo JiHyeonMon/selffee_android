@@ -19,4 +19,5 @@ class MainViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         Glide.with(itemView).load(mainData.img_content).into(img_content)
 
     }
+
 }

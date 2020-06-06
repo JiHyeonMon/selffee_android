@@ -11,6 +11,7 @@
     tools:context=".DetailActivity">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_back"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginLeft="10dp"
