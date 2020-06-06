@@ -43,6 +43,8 @@ class WriteFragment : Fragment() {
                 )
             )
         }
+        myAdapter.datas = datas
+        myAdapter.notifyDataSetChanged()
     }
 
 }
