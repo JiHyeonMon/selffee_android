@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         mainAdapter.datas = datas
         mainAdapter.notifyDataSetChanged()
 
-        btn_mypage.setOnClickListener {
+        btn_my.setOnClickListener {
             val intent = Intent(this, MypageActivity::class.java)
             startActivity(intent)
         }
