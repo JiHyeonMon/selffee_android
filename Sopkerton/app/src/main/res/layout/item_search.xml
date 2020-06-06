@@ -28,10 +28,25 @@
         app:srcCompat="@drawable/icon_heart_selected" />
 
     <TextView
+        android:id="@+id/txt_recipe"
+        android:layout_width="100dp"
+        android:textAlignment="center"
+        android:layout_height="20dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/textbox_background"
+        android:textSize="11sp"
+        android:textColor="@color/white"
+        android:text="오늘의 인기 레시피"
+        app:layout_constraintBottom_toBottomOf="@+id/img_content"
+        app:layout_constraintEnd_toEndOf="@+id/img_content"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="@+id/img_content" />
+
+    <TextView
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_margin="20dp"
+        android:layout_marginHorizontal="20dp"
         android:text="간단한 내용"
         app:layout_constraintTop_toBottomOf="@+id/img_content"
         tools:layout_editor_absoluteX="20dp" />
