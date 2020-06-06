@@ -17,5 +17,6 @@ class MainViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         title.text = mainData.title
         username.text = mainData.username
         Glide.with(itemView).load(mainData.img_content).into(img_content)
+
     }
 }
