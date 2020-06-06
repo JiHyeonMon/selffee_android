@@ -55,52 +55,44 @@ class SearchActivity : AppCompatActivity() {
         datas.apply {
             add(
                 SearchData(
-                    img_content = "https://img.insight.co.kr/static/2018/09/15/700/747cl3tq51cz06846r5u.jpg",
-                    content = "우와~~~~",
+                    img_content = "https://cdn.zeplin.io/5edbc8a5387b91b3276e3984/assets/C11EE686-9970-40AE-A419-2F7DFD77953B.png",
+                    content = "오후엔 코코넛 라떼",
                     txt_tag = "디카페인",
-                    like = true
+                    like = false,
+                    txt_recipe = "오늘의 인기 레시피"
                 )
             )
             add(
                 SearchData(
-                    img_content = "https://img.insight.co.kr/static/2018/09/15/700/747cl3tq51cz06846r5u.jpg",
-                    content = "우와~~~~",
+                    img_content = "https://cdn.zeplin.io/5edbc8a5387b91b3276e3984/assets/D4086013-D722-4E40-BACC-D1E0DDF37A6D.png",
+                    content = "직접 담근 딸기청에이드",
                     txt_tag = "디카페인",
-                    like = true
+                    like = true,
+                    txt_recipe = "오늘의 추천 레시피"
+
                 )
             )
             add(
                 SearchData(
-                    img_content = "https://img.insight.co.kr/static/2018/09/15/700/747cl3tq51cz06846r5u.jpg",
-                    content = "우와~~~~",
+                    img_content = "https://cdn.zeplin.io/5edbc8a5387b91b3276e3984/assets/359B87C3-8BCB-46C1-92EB-800495C93304.png",
+                    content = "아메리카노랑 찰떡 브라우니",
                     txt_tag = "디카페인",
-                    like = true
+                    like = false,
+                    txt_recipe = "오늘의 인기 레시피"
+
                 )
             )
             add(
                 SearchData(
-                    img_content = "https://img.insight.co.kr/static/2018/09/15/700/747cl3tq51cz06846r5u.jpg",
-                    content = "우와~~~~",
+                    img_content = "https://cdn.zeplin.io/5edbc8a5387b91b3276e3984/assets/CF580D9B-89E0-4171-A426-D4131DAE2162.png",
+                    content = "크로와상 맛있게 만드는 법",
                     txt_tag = "디카페인",
-                    like = true
+                    like = true,
+                    txt_recipe = "오늘의 인기 레시피"
+
                 )
             )
-            add(
-                SearchData(
-                    img_content = "https://img.insight.co.kr/static/2018/09/15/700/747cl3tq51cz06846r5u.jpg",
-                    content = "우와~~~~",
-                    txt_tag = "디카페인",
-                    like = true
-                )
-            )
-            add(
-                SearchData(
-                    img_content = "https://img.insight.co.kr/static/2018/09/15/700/747cl3tq51cz06846r5u.jpg",
-                    content = "우와~~~~",
-                    txt_tag = "디카페인",
-                    like = true
-                )
-            )
+
         }
         searchAdapter.datas = datas
         searchAdapter.notifyDataSetChanged()

@@ -4,5 +4,6 @@ data class SearchData(
     val img_content: String,
     val content: String,
     val txt_tag:String,
-    var like: Boolean
+    var like: Boolean,
+    val txt_recipe:String
 )
