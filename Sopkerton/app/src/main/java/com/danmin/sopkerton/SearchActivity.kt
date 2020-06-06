@@ -24,6 +24,7 @@ class SearchActivity : AppCompatActivity() {
 
         btn_hash1.setOnClickListener {
             edit_search.setText(btn_hash1.text)
+
         }
         btn_hash2.setOnClickListener {
             edit_search.setText(btn_hash2.text)
@@ -40,7 +41,9 @@ class SearchActivity : AppCompatActivity() {
             add(
                 SearchData(
                     img_content = "https://img.insight.co.kr/static/2018/09/15/700/747cl3tq51cz06846r5u.jpg",
-                    content = "우와~~~~"
+                    content = "우와~~~~",
+                    txt_tag = "#해시태그1",
+                    like = true
                 )
             )
         }
