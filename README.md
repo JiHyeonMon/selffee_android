@@ -1,11 +1,11 @@
 # Selffee 를 소개합니다
 
-
-
-<img src="https://user-images.githubusercontent.com/50662636/83956331-dbd63c80-a897-11ea-8cee-217f1fd30b85.png" width="180" title="스플래쉬">
-<img src="https://user-images.githubusercontent.com/50662636/83956344-f3152a00-a897-11ea-880a-826d18f1d73a.png" width="180" title="메인">
-<img src="https://user-images.githubusercontent.com/50662636/83956332-e264b400-a897-11ea-83f6-7ace53447507.png" width="180" title="검색창">
-<img src="https://user-images.githubusercontent.com/50662636/83956334-e85a9500-a897-11ea-928b-1d7c70cbd338.png" width="180" title="검색결과">
-<img src="https://user-images.githubusercontent.com/50662636/83956339-ef81a300-a897-11ea-9ed1-32c76a4e4938.png" width="180" title="상세정보">
-<img src="https://user-images.githubusercontent.com/50662636/83956425-de856180-a898-11ea-9eee-cd150783f77d.png" width="180" title="마이페이지">
-<img src="https://user-images.githubusercontent.com/50662636/83956345-f6a8b100-a897-11ea-9da6-883c37515c2f.png" width="180" title="글쓰기">
+<div>
+<img width="140" src="https://user-images.githubusercontent.com/50590192/83956697-c5ca7b00-a89b-11ea-9bed-a65dba6f44bf.png">
+<img width="140" src="https://user-images.githubusercontent.com/50590192/83956698-cd8a1f80-a89b-11ea-820f-a69a2f41cf37.png">
+<img width="140" src="https://user-images.githubusercontent.com/50590192/83956702-d1b63d00-a89b-11ea-99c4-ee19b50352d2.png">
+<img width="140" src="https://user-images.githubusercontent.com/50590192/83956703-d3800080-a89b-11ea-8429-eae8fbebf929.png">
+<img width="140" src="https://user-images.githubusercontent.com/50590192/83956704-d5e25a80-a89b-11ea-9759-9c19a133b608.png">
+<img width="140" src="https://user-images.githubusercontent.com/50590192/83956706-d844b480-a89b-11ea-9c27-289e252a0b47.png">
+<img width="140" src="https://user-images.githubusercontent.com/50590192/83956708-daa70e80-a89b-11ea-8cdb-eeb389928997.png">
+</div>
