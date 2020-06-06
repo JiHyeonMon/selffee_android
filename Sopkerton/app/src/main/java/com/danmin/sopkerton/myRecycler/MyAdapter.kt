@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.danmin.sopkerton.R
 
-class Adapter1 (private val context: Context) : RecyclerView.Adapter<MyViewHolder>(){
+class MyAdapter (private val context: Context) : RecyclerView.Adapter<MyViewHolder>(){
 
     var datas = mutableListOf<MyData>()
 
