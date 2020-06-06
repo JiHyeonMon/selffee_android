@@ -3,6 +3,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv1">아이디/비밀번호찾기<u>underline</u></string>
+    <string name="tv2">회원가입<u>underline</u></string>
     <string name="write">내가 쓴 글(20)</string>
     <string name="like">좋아요(14)</string>
     <string name="zzim">찜한 레시피(16)</string>

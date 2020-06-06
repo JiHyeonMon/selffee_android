@@ -2,9 +2,8 @@ package com.danmin.sopkerton
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.danmin.sopkerton.recipeRecycler.RecipeAdapter
+import com.danmin.sopkerton.recipeRecycler.Related_Recipe_Data
 import kotlinx.android.synthetic.main.activity_detail.*
 
 class DetailActivity : AppCompatActivity() {
