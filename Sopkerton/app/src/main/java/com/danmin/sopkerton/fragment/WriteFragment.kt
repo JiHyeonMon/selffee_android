@@ -61,6 +61,26 @@ class WriteFragment : Fragment() {
                     img_my = "https://cdn.zeplin.io/5edbc8a5387b91b3276e3984/assets/3E2882D2-779D-4357-9015-B3E03D2A93E3.png"
                 )
             )
+            add(
+                MyData(
+                    img_my = "https://cdn.zeplin.io/5edbc8a5387b91b3276e3984/assets/8829AB2D-53D4-4980-86D3-BB163A0F61B2.png"
+                )
+            )
+            add(
+                MyData(
+                    img_my = "https://cdn.zeplin.io/5edbc8a5387b91b3276e3984/assets/548853F2-D7E4-4168-9250-59988D83666D.png"
+                )
+            )
+            add(
+                MyData(
+                    img_my = "https://cdn.zeplin.io/5edbc8a5387b91b3276e3984/assets/2213EADA-B36B-46B2-84D6-7DF5CD52BA8F.png"
+                )
+            )
+            add(
+                MyData(
+                    img_my = "https://cdn.zeplin.io/5edbc8a5387b91b3276e3984/assets/3E2882D2-779D-4357-9015-B3E03D2A93E3.png"
+                )
+            )
         }
         myAdapter.datas = datas
         myAdapter.notifyDataSetChanged()
