@@ -11,7 +11,7 @@ class SearchAdapter (private val context: Context): RecyclerView.Adapter<SearchV
     var datas = mutableListOf<SearchData>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SearchViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_main,parent,false)
+        val view = LayoutInflater.from(context).inflate(R.layout.item_search,parent,false)
         return SearchViewHolder(view)
     }
 
