@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import com.danmin.sopkerton.myRecycler.MyAdapter
-import com.example.sopt_assignment_2_1.MypageAdapter
 import kotlinx.android.synthetic.main.activity_mypage.*
 
 class MypageActivity : AppCompatActivity() {

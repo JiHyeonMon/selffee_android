@@ -1,4 +1,4 @@
-package com.example.sopt_assignment_2_1
+package com.danmin.sopkerton
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
