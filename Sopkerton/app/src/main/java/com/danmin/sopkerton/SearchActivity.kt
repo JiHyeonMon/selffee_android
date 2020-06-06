@@ -3,6 +3,7 @@ package com.danmin.sopkerton
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import com.danmin.sopkerton.searchRecycler.SearchAdapter
 import com.danmin.sopkerton.searchRecycler.SearchData
@@ -17,17 +18,26 @@ class SearchActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
 
-        btn_mypage.setOnClickListener {
-            val intent = Intent(this, MypageActivity::class.java)
-            startActivity(intent)
+        btn_left.setOnClickListener {
+            finish()
+        }
+
+        btn_search.setOnClickListener {
+            rv_search.visibility = View.GONE
+            linearLayout.visibility = View.VISIBLE
+            edit_search.setText("")
+
         }
 
         btn_hash1.setOnClickListener {
             edit_search.setText(btn_hash1.text)
-
+            rv_search.visibility = View.VISIBLE
+            linearLayout.visibility = View.GONE
         }
         btn_hash2.setOnClickListener {
             edit_search.setText(btn_hash2.text)
+            rv_search.visibility = View.VISIBLE
+            linearLayout.visibility = View.GONE
         }
 
         searchAdapter = SearchAdapter(this)

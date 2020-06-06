@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/btn_mypage"
+        android:id="@+id/btn_my"
         android:background="#ffffff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
         android:layout_marginLeft="144dp"
         android:layout_marginTop="16dp"
         android:text="레시피"
-        app:layout_constraintStart_toEndOf="@+id/btn_mypage"
+        app:layout_constraintStart_toEndOf="@+id/btn_my"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
