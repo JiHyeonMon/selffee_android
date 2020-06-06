@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.danmin.sopkerton.mainRecycler.MainAdapter
 import com.danmin.sopkerton.mainRecycler.MainData
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.item_main.*
 
 class MainActivity : AppCompatActivity() {
     lateinit var mainAdapter: MainAdapter
