@@ -3,6 +3,7 @@ package com.danmin.sopkerton
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import com.danmin.sopkerton.searchRecycler.SearchAdapter
@@ -19,6 +20,8 @@ class SearchActivity : AppCompatActivity() {
         setContentView(R.layout.activity_search)
 
         btn_left.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
             finish()
         }
 
@@ -40,10 +43,12 @@ class SearchActivity : AppCompatActivity() {
             linearLayout.visibility = View.GONE
         }
 
+
         searchAdapter = SearchAdapter(this)
         rv_search.run {
             adapter = searchAdapter
             layoutManager = GridLayoutManager(this@SearchActivity, 2)
+
 
         }
 
@@ -56,8 +61,50 @@ class SearchActivity : AppCompatActivity() {
                     like = true
                 )
             )
+            add(
+                SearchData(
+                    img_content = "https://img.insight.co.kr/static/2018/09/15/700/747cl3tq51cz06846r5u.jpg",
+                    content = "우와~~~~",
+                    txt_tag = "디카페인",
+                    like = true
+                )
+            )
+            add(
+                SearchData(
+                    img_content = "https://img.insight.co.kr/static/2018/09/15/700/747cl3tq51cz06846r5u.jpg",
+                    content = "우와~~~~",
+                    txt_tag = "디카페인",
+                    like = true
+                )
+            )
+            add(
+                SearchData(
+                    img_content = "https://img.insight.co.kr/static/2018/09/15/700/747cl3tq51cz06846r5u.jpg",
+                    content = "우와~~~~",
+                    txt_tag = "디카페인",
+                    like = true
+                )
+            )
+            add(
+                SearchData(
+                    img_content = "https://img.insight.co.kr/static/2018/09/15/700/747cl3tq51cz06846r5u.jpg",
+                    content = "우와~~~~",
+                    txt_tag = "디카페인",
+                    like = true
+                )
+            )
+            add(
+                SearchData(
+                    img_content = "https://img.insight.co.kr/static/2018/09/15/700/747cl3tq51cz06846r5u.jpg",
+                    content = "우와~~~~",
+                    txt_tag = "디카페인",
+                    like = true
+                )
+            )
         }
         searchAdapter.datas = datas
         searchAdapter.notifyDataSetChanged()
+
     }
+
 }
