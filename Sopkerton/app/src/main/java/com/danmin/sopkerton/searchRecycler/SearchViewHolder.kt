@@ -13,7 +13,6 @@ class SearchViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
     val content = itemView.findViewById<TextView>(R.id.content)
 
     fun bind(searchData: SearchData){
-
         content.text = searchData.content
         Glide.with(itemView).load(searchData.img_profile).into(img_profile)
         Glide.with(itemView).load(searchData.img_content).into(img_content)
