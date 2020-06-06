@@ -15,17 +15,6 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
-        btn_search.setOnClickListener {
-            val intent = Intent(this, SearchActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
-        btn_my.setOnClickListener {
-            val intent = Intent(this, MypageActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
 
         RecipeAdapter = RecipeAdapter(this)
         rv_Related_recipe.adapter = RecipeAdapter

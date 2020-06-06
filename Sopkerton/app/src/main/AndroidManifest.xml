@@ -21,9 +21,9 @@
         <activity android:name=".MypageActivity" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".SearchActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".UploadActivity" />
+        <activity android:name=".MainActivity">
+
+        </activity>
     </application>
 
 </manifest>
