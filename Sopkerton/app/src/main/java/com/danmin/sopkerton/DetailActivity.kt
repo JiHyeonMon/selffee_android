@@ -25,8 +25,6 @@ class DetailActivity : AppCompatActivity() {
         RecipeAdapter = RecipeAdapter(this)
         rv_Related_recipe.adapter = RecipeAdapter
         loadDatas()
-
-
     }
 
 
