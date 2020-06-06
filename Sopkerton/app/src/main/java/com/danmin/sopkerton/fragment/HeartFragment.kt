@@ -1,4 +1,4 @@
-package com.example.sopt_together.fragment.category
+package com.danmin.sopkerton.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
