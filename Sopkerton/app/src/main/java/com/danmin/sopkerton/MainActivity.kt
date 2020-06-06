@@ -18,10 +18,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button.setOnClickListener {
-            val intent = Intent(this, SearchActivity::class.java)
-            startActivity(intent)
-        }
+       // button.setOnClickListener {
+       //     val intent = Intent(this, SearchActivity::class.java)
+        // startActivity(intent)
+       // }
 
         mainAdapter = MainAdapter(this)
         rv_home.run {
@@ -41,5 +41,6 @@ class MainActivity : AppCompatActivity() {
         }
         mainAdapter.datas = datas
         mainAdapter.notifyDataSetChanged()
+
     }
 }
