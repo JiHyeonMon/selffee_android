@@ -22,10 +22,8 @@
         android:id="@+id/btn_like"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:background="@drawable/icon_heart_selected"
-        app:layout_constraintStart_toStartOf="@+id/img_content"
+        app:layout_constraintEnd_toEndOf="@+id/img_content"
         app:layout_constraintTop_toTopOf="@+id/img_content"
         app:srcCompat="@drawable/icon_heart_selected" />
 

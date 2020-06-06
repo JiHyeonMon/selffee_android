@@ -12,9 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MypageActivity"/>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".DetailActivity" />
         <activity android:name=".SearchActivity" />
-        <activity android:name=".DetailActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
