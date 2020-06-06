@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.danmin.sopkerton.R
+import com.danmin.sopkerton.data.ResponseMainData
 
 class MainAdapter (private val context: Context):RecyclerView.Adapter<MainViewHolder>(){
 
