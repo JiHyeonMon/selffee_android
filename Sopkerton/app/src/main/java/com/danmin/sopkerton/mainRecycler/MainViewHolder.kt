@@ -9,13 +9,13 @@ import com.danmin.sopkerton.R
 
 
 class MainViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
+    val title = itemView.findViewById<TextView>(R.id.title)
     val username = itemView.findViewById<TextView>(R.id.username)
-//    val img_profile = itemView.findViewById<ImageView>(R.id.img_profile)
     val img_content = itemView.findViewById<ImageView>(R.id.img_content)
 
     fun bind(mainData: MainData){
+        title.text = mainData.title
         username.text = mainData.username
-//        Glide.with(itemView).load(mainData.img_profile).into(img_profile)
         Glide.with(itemView).load(mainData.img_content).into(img_content)
     }
 }
