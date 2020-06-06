@@ -52,7 +52,7 @@ class SearchActivity : AppCompatActivity() {
                 SearchData(
                     img_content = "https://img.insight.co.kr/static/2018/09/15/700/747cl3tq51cz06846r5u.jpg",
                     content = "우와~~~~",
-                    txt_tag = "#해시태그1",
+                    txt_tag = "디카페인",
                     like = true
                 )
             )
