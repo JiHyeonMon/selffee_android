@@ -18,10 +18,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-       // button.setOnClickListener {
-       //     val intent = Intent(this, SearchActivity::class.java)
-        // startActivity(intent)
-       // }
+        button.setOnClickListener {
+            val intent = Intent(this, SearchActivity::class.java)
+            startActivity(intent)
+        }
 
         mainAdapter = MainAdapter(this)
         rv_home.run {
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             add(
                 MainData(
                     username = "이정민",
-                    img_profile = "https://avatars1.githubusercontent.com/u/50590192?s=460&u=e6a104455a4e61cb4b4693e1be8debc48bb955f6&v=4",
+//                    img_profile = "https://avatars1.githubusercontent.com/u/50590192?s=460&u=e6a104455a4e61cb4b4693e1be8debc48bb955f6&v=4",
                     img_content = "https://img.insight.co.kr/static/2018/09/15/700/747cl3tq51cz06846r5u.jpg",
                     content = "우와~~~~"
                 )
@@ -41,6 +41,5 @@ class MainActivity : AppCompatActivity() {
         }
         mainAdapter.datas = datas
         mainAdapter.notifyDataSetChanged()
-
     }
 }
