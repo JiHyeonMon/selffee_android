@@ -4,103 +4,180 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".UploadActivity">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_bar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/cardview_dark_background"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/rv_home"
+        android:layout_height="56dp"
+        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="asdfasdfasfd" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="79dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/selffee_logo"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/upload_btn"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_weight="1"
-            android:src="@drawable/ic_add_black_24dp" />
-    </LinearLayout>
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:src="@drawable/mypage_icon_write"
+            android:text="완료"
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="30dp"
+        android:padding="20dp"
         app:layout_constraintTop_toBottomOf="@id/main_bar">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/upload_image"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:background="@color/cardview_dark_background"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="27dp"
+            android:src="@drawable/recipe_icon_camera"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/title"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name"
+            android:paddingHorizontal="10dp"
+            android:text="제목"
             app:layout_constraintTop_toBottomOf="@+id/upload_image"
             tools:layout_editor_absoluteX="83dp" />
 
         <EditText
             android:id="@+id/hashtag"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
             android:ems="10"
+            android:gravity="start"
             android:inputType="textPersonName"
-
-            android:text="Name"
+            android:paddingHorizontal="10dp"
+            android:text="내용"
             app:layout_constraintTop_toBottomOf="@+id/title"
             tools:layout_editor_absoluteX="95dp" />
 
         <EditText
             android:id="@+id/time"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name"
+            android:paddingLeft="30dp"
+            android:text="18분"
             app:layout_constraintTop_toBottomOf="@+id/hashtag"
             tools:layout_editor_absoluteX="101dp" />
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:src="@drawable/recipe_icon_time"
+            app:layout_constraintBottom_toTopOf="@id/receipe"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hashtag" />
 
         <EditText
             android:id="@+id/receipe"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
             android:ems="10"
-            android:gravity="start|top"
-
+            android:gravity="start|center"
             android:inputType="textMultiLine"
+            android:paddingLeft="30dp"
+            android:text="마끼아또, 라떼"
             app:layout_constraintTop_toBottomOf="@+id/time"
             tools:layout_editor_absoluteX="83dp" />
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:src="@drawable/recipe_icon_tag"
+            app:layout_constraintBottom_toTopOf="@id/story"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
 
         <EditText
             android:id="@+id/story"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-
+            android:paddingLeft="30dp"
+            android:text="에스프레소 1샷\n우유 200 ml\n코코넛 시럽 10 ml\n초콜릿 헤이즐럿\n갈은 코코넛 슬라이스 1 g"
             app:layout_constraintTop_toBottomOf="@+id/receipe"
             tools:layout_editor_absoluteX="107dp" />
+
+        <EditText
+            android:id="@+id/how"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:paddingLeft="30dp"
+            android:text="1. 초콜릿 헤이즐넛 2펌프, 에스프레소를 넣는다\n2. 우유를 데워서 코코 시럽을 넣고 섞는다\n3. 우유 거품기를 사용해 우유 거품을 준비한다\n4. 스프레드 위에 우유를 붓고 위에 거품을 올린다\n5. 스프레드를 글래스 가장자리를 따라 장식한다\n6. 곱게 간 코코넛을 뿌려 장식한다"
+            app:layout_constraintTop_toBottomOf="@+id/story"
+            tools:layout_editor_absoluteX="107dp" />
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/recipe_icon_ingredient"
+            app:layout_constraintBottom_toTopOf="@id/how"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hashtag" />
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/recipe_icon_recipe"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/how" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
