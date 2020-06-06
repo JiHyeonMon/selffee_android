@@ -31,6 +31,14 @@ class MainActivity : AppCompatActivity() {
                     content = "우와~~~~"
                 )
             )
+            add(
+                MainData(
+                    title = "우와",
+                    username = "이정민",
+                    img_content = "https://img.insight.co.kr/static/2018/09/15/700/747cl3tq51cz06846r5u.jpg",
+                    content = "우와~~~~"
+                )
+            )
         }
         mainAdapter.datas = datas
         mainAdapter.notifyDataSetChanged()
