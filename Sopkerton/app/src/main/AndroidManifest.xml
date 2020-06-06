@@ -14,8 +14,10 @@
         <activity android:name=".DetailActivity">
 
         </activity>
+        <activity android:name=".UploadActivity"/>
         <activity android:name=".MypageActivity" />
         <activity android:name=".SearchActivity" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

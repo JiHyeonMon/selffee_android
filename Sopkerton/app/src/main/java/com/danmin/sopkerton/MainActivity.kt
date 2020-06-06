@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         button.setOnClickListener {
-            val intent = Intent(this, MypageActivity::class.java)
+            val intent = Intent(this, SearchActivity::class.java)
             startActivity(intent)
         }
 
