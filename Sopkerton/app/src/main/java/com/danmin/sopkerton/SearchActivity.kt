@@ -1,9 +1,9 @@
 package com.danmin.sopkerton
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.danmin.sopkerton.searchRecycler.SearchAdapter
 import com.danmin.sopkerton.searchRecycler.SearchData
 import kotlinx.android.synthetic.main.activity_search.*
@@ -16,6 +16,18 @@ class SearchActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
+
+        btn_mypage.setOnClickListener {
+            val intent = Intent(this, MypageActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_hash1.setOnClickListener {
+            edit_search.setText(btn_hash1.text)
+        }
+        btn_hash2.setOnClickListener {
+            edit_search.setText(btn_hash2.text)
+        }
 
         searchAdapter = SearchAdapter(this)
         rv_search.run {

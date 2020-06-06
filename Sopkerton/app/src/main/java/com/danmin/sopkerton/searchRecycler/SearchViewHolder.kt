@@ -16,5 +16,7 @@ class SearchViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         Glide.with(itemView).load(searchData.img_content).into(img_content)
     }
 
-    
+
+
+
 }
