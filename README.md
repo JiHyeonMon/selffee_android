@@ -1,4 +1,4 @@
-# Selffee 를 소개합니다
+# Selffee 를 소개합니다 :clap::clap:
 
 <div>
 <img width="200" src="https://user-images.githubusercontent.com/50590192/83956697-c5ca7b00-a89b-11ea-9bed-a65dba6f44bf.png">
@@ -10,3 +10,7 @@
 <img width="200" src="https://user-images.githubusercontent.com/50590192/83956827-f3fc8a80-a89c-11ea-97bf-15ccaaaf102d.png">
 <img width="200" src="https://user-images.githubusercontent.com/50590192/83956819-f1019a00-a89c-11ea-8d30-48d2e236af8d.png">
 </div>
+
+
+#### Selffee 란?! :eyes:
+집에서만 있기 심심한 사람들, 집에서 나가기 싫은 사람들, 집에서 카페를 즐기고 싶은 사람들을 위한 애플리케이션.
