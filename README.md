@@ -12,7 +12,7 @@
 </div>
 
 
-#### :coffee: Selffee 란?! :eyes:
+## :coffee: Selffee 란?! :eyes:
 집에서만 있기 심심한 사람들, 집에서 나가기 싫은 사람들, 집에서 카페를 즐기고 싶은 사람들을 위한 애플리케이션.
 
 1) **splash페이지** 
